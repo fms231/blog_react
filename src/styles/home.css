@@ -54,6 +54,7 @@
   min-height: 5.8rem;
   line-height: 1.85;
   font-family: var(--font-bio);
+  font-size: larger;
 }
 
 .typing-bio {

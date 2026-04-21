@@ -1,3 +1,4 @@
+import avatarImage from '../assets/avatar.png'
 import { siteContent } from '../data/content'
 
 function AboutPage() {
@@ -15,7 +16,9 @@ function AboutPage() {
         </div>
         <div className="portrait">
           <div className="portrait-light" />
-          <div className="portrait-face">{siteContent.about.portraitInitials}</div>
+          <div className="portrait-face">
+            <img className="portrait-image" src={avatarImage} alt={`${siteContent.hero.name} avatar`} />
+          </div>
         </div>
       </header>
 

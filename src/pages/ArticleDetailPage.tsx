@@ -1,5 +1,6 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 
+import avatarImage from '../assets/avatar.png'
 import { getArticleById } from '../data/articles'
 import { siteContent } from '../data/content'
 
@@ -26,7 +27,9 @@ function ArticleDetailPage() {
           </div>
           <h1>{article.title}</h1>
           <div className="author">
-            <span className="author-avatar">{siteContent.detailAuthor.initials}</span>
+            <span className="author-avatar">
+              <img src={avatarImage} alt={siteContent.detailAuthor.name} className="avatar-image"/>
+            </span>
             <div>
               <strong>{siteContent.detailAuthor.name}</strong>
               <p>{siteContent.detailAuthor.title}</p>

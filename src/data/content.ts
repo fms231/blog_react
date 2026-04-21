@@ -1,4 +1,4 @@
-import type { Moment, NavItem } from '../types/blog'
+import type { NavItem } from '../types/blog'
 
 export const navItems: NavItem[] = [
   { path: '/', label: 'Home' },
@@ -13,9 +13,9 @@ export const siteContent = {
   subscribeButtonText: 'Subscribe',
   hero: {
     initials: "src/assets/avatar.png",
-    status: 'Available for projects',
+    status: 'Dazed',
     name: 'Quito',
-    bio: 'Architect of digital experiences and curator of thoughtful narratives. Exploring the intersection of psychology, minimalist design, and quiet technology.',
+    bio: 'To be both a speaker of words and a doer of deeds.',
     location: '📍 GuangDong, CN',
     writingSince: '✦ Writing since 2021',
   },
@@ -61,33 +61,3 @@ export const siteContent = {
   },
 }
 
-export const moments: Moment[] = [
-  {
-    id: 'm1',
-    time: '08:42 AM · Oct 24, 2023',
-    text: 'The first light through the kitchen window always feels like a secret between the sun and morning brew.',
-    tags: ['#QuietMorning', '#Solitude'],
-    tone: 'dawn',
-  },
-  {
-    id: 'm2',
-    time: '01:15 PM · Oct 24, 2023',
-    text: 'From high above, the city grid becomes calm. Clarity appears when motion becomes pattern.',
-    tags: ['#MiddayFocus'],
-    tone: 'noon',
-  },
-  {
-    id: 'm3',
-    time: '06:50 PM · Oct 24, 2023',
-    text: 'The sky tonight is a gradient of ember and indigo, an apology for the noise of the day.',
-    tags: ['#Sunset', '#Reset'],
-    tone: 'dusk',
-  },
-  {
-    id: 'm4',
-    time: '11:30 PM · Oct 24, 2023',
-    text: 'Shutting down the digital hum. Tomorrow is a fresh canvas.',
-    tags: ['#NightLog'],
-    tone: 'night',
-  },
-]
