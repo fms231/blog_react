@@ -18,7 +18,6 @@ export type Moment = {
   time: string
   text: string
   tags: string[]
-  tone: 'dawn' | 'noon' | 'dusk' | 'night'
 }
 
 export type NavItem = {

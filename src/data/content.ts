@@ -9,7 +9,7 @@ export const navItems: NavItem[] = [
 
 export const siteContent = {
   brandName: 'Destiny',
-  searchPlaceholder: 'Search...',
+  searchPlaceholder: 'Search posts by title...',
   subscribeButtonText: 'Subscribe',
   hero: {
     initials: "src/assets/avatar.png",

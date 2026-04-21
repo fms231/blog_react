@@ -157,3 +157,17 @@
   background: #e8e2f2;
   color: var(--primary);
 }
+
+.article-line-empty {
+  text-align: center;
+  padding: 28px 24px;
+}
+
+.article-line-empty h3 {
+  margin: 0 0 10px;
+}
+
+.article-line-empty p {
+  margin: 0;
+  color: var(--text-muted);
+}

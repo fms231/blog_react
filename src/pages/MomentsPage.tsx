@@ -37,7 +37,6 @@ function MomentsPage() {
                 <span key={tag}>{tag}</span>
               ))}
             </div>
-            <div className={`moment-image ${moment.tone}`} aria-hidden="true" />
           </article>
         ))}
       </div>
@@ -52,7 +51,7 @@ function MomentsPage() {
               )
             }
           >
-            Load Previous Log
+            Load Previous Moments
           </button>
         </div>
       )}

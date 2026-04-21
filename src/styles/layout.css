@@ -67,6 +67,10 @@
   gap: 10px;
 }
 
+.search-form {
+  margin: 0;
+}
+
 .search {
   width: 180px;
   border: 1px solid var(--line);
