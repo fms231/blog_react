@@ -17,11 +17,10 @@ function MomentsPage() {
   return (
     <section className="page page-moments">
       <header className="page-header centered">
-        <span className="chip status">Atmospheric Journal</span>
-        <h1>Daily Reflections</h1>
+        <span className="chip status">Mood</span>
+        <h1>Daily Moments</h1>
         <p>
-          Capturing the fleeting moments of clarity and subtle textures of
-          everyday existence.
+          Record my daily experiences and reflections, anything that matters.
         </p>
       </header>
 
@@ -53,7 +52,7 @@ function MomentsPage() {
               )
             }
           >
-            Load Previous Moment
+            Load Previous Log
           </button>
         </div>
       )}

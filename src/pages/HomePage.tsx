@@ -64,10 +64,10 @@ function HomePage() {
       <section className="section-head">
         <div>
           <h2>Latest Articles</h2>
-          <p>Thoughts on craft, life, and the digital void.</p>
+          <p>Notes on Go, Python, AI-assisted coding, and the systems I build every day.</p>
         </div>
         <button type="button" onClick={() => navigate('/articles')}>
-          View Archive →
+          View Articles →
         </button>
       </section>
 
@@ -90,7 +90,7 @@ function HomePage() {
           </article>
 
           <article className="card">
-            <h3>Topics</h3>
+            <h3>Core Tools</h3>
             <div className="tag-list">
               {siteContent.topics.map((topic) => (
                 <span key={topic}>{topic}</span>
@@ -99,7 +99,7 @@ function HomePage() {
           </article>
 
           <article className="card">
-            <h3>Connect</h3>
+            <h3>Links</h3>
             <div className="connect-list">
               {siteContent.connectLinks.map((link) => (
                 <a key={link.label} href={link.href}>

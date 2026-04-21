@@ -8,11 +8,10 @@ function ArticlesPage() {
   return (
     <section className="page">
       <header className="page-header">
-        <span className="chip status">Curated Archives</span>
-        <h1>Insights & Narratives</h1>
+        <span className="chip status">ARTICLES</span>
+        <h1>My Articles</h1>
         <p>
-          Exploring the intersections of mental clarity, productivity
-          architecture, and a balanced digital existence.
+          Exploring Go, Python, Redis, MySQL, MQ, Docker, and the practical side of shipping backend systems.
         </p>
       </header>
 
