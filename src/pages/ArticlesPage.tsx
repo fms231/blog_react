@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-import { articles } from '../data/content'
+import { articles } from '../data/articles'
 
 function ArticlesPage() {
   const navigate = useNavigate()

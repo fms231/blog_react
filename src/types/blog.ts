@@ -7,7 +7,7 @@ export type Article = {
   title: string
   excerpt: string
   readMinutes: number
-  comments: number
+  wordCount: number
   body: string[]
   quote: string
   points: string[]

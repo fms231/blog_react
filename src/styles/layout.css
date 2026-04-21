@@ -32,7 +32,7 @@
   font-weight: 800;
   color: var(--primary);
   letter-spacing: -0.02em;
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
 }
 
 .top-links {
@@ -116,7 +116,7 @@
 .site-footer strong {
   color: #50486a;
   font-size: 0.95rem;
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
 }
 
 .site-footer p {

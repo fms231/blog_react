@@ -53,7 +53,7 @@
   max-width: 820px;
   min-height: 5.8rem;
   line-height: 1.85;
-  font-family: var(--font-body);
+  font-family: var(--font-bio);
 }
 
 .typing-bio {

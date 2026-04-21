@@ -1,6 +1,7 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 
-import { getArticleById, siteContent } from '../data/content'
+import { getArticleById } from '../data/articles'
+import { siteContent } from '../data/content'
 
 function ArticleDetailPage() {
   const navigate = useNavigate()

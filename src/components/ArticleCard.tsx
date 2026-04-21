@@ -17,7 +17,7 @@ function ArticleCard({
       <p>{article.excerpt}</p>
       <div className="article-stats">
         <span>● {article.readMinutes} min read</span>
-        <span>● {article.comments} comments</span>
+        <span>● {article.wordCount} words</span>
       </div>
     </article>
   )

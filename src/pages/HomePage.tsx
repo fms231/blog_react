@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import avatarImage from '../assets/avatar.png'
 import ArticleCard from '../components/ArticleCard'
-import { articles, siteContent } from '../data/content'
+import { articles } from '../data/articles'
+import { siteContent } from '../data/content'
 
 function HomePage() {
   const navigate = useNavigate()
