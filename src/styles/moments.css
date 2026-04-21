@@ -1,0 +1,106 @@
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 30px;
+  padding: 16px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(106, 83, 179, 0.22),
+    rgba(106, 83, 179, 0.58),
+    rgba(106, 83, 179, 0.22)
+  );
+  transform: translateX(-50%);
+}
+
+.moment-card {
+  position: relative;
+  width: calc(50% - 30px);
+  padding: 24px;
+}
+
+.moment-card::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 3px solid var(--surface);
+  background: var(--primary);
+  box-shadow: 0 0 0 3px rgba(106, 83, 179, 0.24);
+}
+
+.moment-card.left {
+  justify-self: start;
+}
+
+.moment-card.left::after {
+  right: -30px;
+}
+
+.moment-card.right {
+  justify-self: end;
+}
+
+.moment-card.right::after {
+  left: -30px;
+}
+
+.moment-card time {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-meta);
+}
+
+.moment-card p {
+  margin: 14px 0;
+  line-height: 1.85;
+}
+
+.moment-image {
+  margin-top: 18px;
+  border-radius: 12px;
+  height: 148px;
+  border: 1px solid var(--line);
+}
+
+.moment-image.dawn {
+  background: linear-gradient(135deg, #f3edf7, #c8bbdf 70%, #8b74b8);
+}
+
+.moment-image.noon {
+  background: linear-gradient(135deg, #efeaf7, #b9a9d8 60%, #74639f);
+}
+
+.moment-image.dusk {
+  background: linear-gradient(135deg, #f4e8f0, #d9a8c5, #7e68ac);
+}
+
+.moment-image.night {
+  background: linear-gradient(145deg, #2a2438, #4f436b, #3b3250);
+}
+
+.timeline-more {
+  text-align: center;
+}
+
+.timeline-more button {
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  padding: 12px 20px;
+  background: #f6f3fb;
+  color: #595270;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-ui);
+}

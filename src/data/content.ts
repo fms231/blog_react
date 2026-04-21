@@ -12,7 +12,7 @@ export const siteContent = {
   searchPlaceholder: 'Search...',
   subscribeButtonText: 'Subscribe',
   hero: {
-    initials: 'ES',
+    initials: "src/assets/avatar.png",
     status: 'Available for projects',
     name: 'Quito',
     bio: 'Architect of digital experiences and curator of thoughtful narratives. Exploring the intersection of psychology, minimalist design, and quiet technology.',
@@ -36,6 +36,8 @@ export const siteContent = {
   connectLinks: [
     { label: 'Follow on X', href: '#' },
     { label: 'LinkedIn', href: '#' },
+    { label: 'WeChat', href: '#' },
+    { label: 'Instagram', href: '#' },
   ],
   about: {
     eyebrow: 'The Curator',

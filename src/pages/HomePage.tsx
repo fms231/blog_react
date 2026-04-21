@@ -1,21 +1,58 @@
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import avatarImage from '../assets/avatar.png'
 import ArticleCard from '../components/ArticleCard'
 import { articles, siteContent } from '../data/content'
 
 function HomePage() {
   const navigate = useNavigate()
+  const fullBio = siteContent.hero.bio
+  const [typedBio, setTypedBio] = useState('')
+
+  useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (motionQuery.matches) {
+      setTypedBio(fullBio)
+      return
+    }
+
+    setTypedBio('')
+    let cursor = 0
+    const timer = window.setInterval(() => {
+      cursor += 1
+      setTypedBio(fullBio.slice(0, cursor))
+
+      if (cursor >= fullBio.length) {
+        window.clearInterval(timer)
+      }
+    }, 22)
+
+    return () => window.clearInterval(timer)
+  }, [fullBio])
 
   return (
     <section className="page page-home">
       <header className="hero card">
         <div className="avatar-shell">
-          <div className="avatar">{siteContent.hero.initials}</div>
+          <div className="avatar">
+            <img
+              src={avatarImage}
+              alt={`${siteContent.hero.name} avatar`}
+              className="avatar-image"
+            />
+          </div>
         </div>
         <div className="hero-content">
           <span className="chip status">{siteContent.hero.status}</span>
           <h1>{siteContent.hero.name}</h1>
-          <p>{siteContent.hero.bio}</p>
+          <p className="hero-bio typing-bio">
+            {typedBio}
+            <span
+              aria-hidden="true"
+              className={`typing-cursor ${typedBio.length >= fullBio.length ? 'is-done' : ''}`}
+            />
+          </p>
           <div className="hero-meta">
             <span>{siteContent.hero.location}</span>
             <span>{siteContent.hero.writingSince}</span>
